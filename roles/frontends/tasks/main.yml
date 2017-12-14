@@ -34,16 +34,16 @@
     dest: /etc/haproxy/haproxy.cfg
   notify: restart HAproxy
 
-- name: Config Firewall - 8080/tcp
-  firewalld:
-    port: 8080/tcp 
-    permanent: true
-    immediate: true
-    state: enabled
-
-- name: Config Firewall - 80/tcp
-  firewalld:
-    port: 80/tcp 
-    permanent: true
-    immediate: true
-    state: enabled
+##### - name: Config Firewall - 8080/tcp
+#####   firewalld:
+#####     port: 8080/tcp 
+#####     permanent: true
+#####     immediate: true
+#####     state: enabled
+##### 
+##### - name: Config Firewall - 80/tcp
+#####   firewalld:
+#####     port: 80/tcp 
+#####     permanent: true
+#####     immediate: true
+#####     state: enabled
